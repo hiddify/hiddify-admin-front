@@ -8,7 +8,6 @@ import {
   stepLabelClasses,
   SxProps,
   Theme,
-  useMediaQuery,
 } from '@mui/material';
 import React from 'react';
 import { TStep } from '../providers/installTypeProvider';
@@ -20,7 +19,7 @@ type TProps = {
 };
 
 const Stepper: React.FC<TProps> = ({ sx, steps, activeStep = 1 }) => {
-  const isMobile = useMediaQuery('(max-width:768px)');
+  // const isMobile = useMediaQuery('(max-width:768px)');
 
   return (
     <Box sx={{ width: 'fit-content', ...sx }}>

@@ -1,14 +1,17 @@
 {
   "name": "hiddify-admin-front",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "homepage": "https://hiddify.github.io/hiddify-admin-front/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "format": "prettier --write .",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 prettier --check .",
-    "preview": "vite preview",
-    "format": "prettier --write ."
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -28,6 +31,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.3.3",
     "prettier-plugin-organize-imports": "^4.0.0",
     "prettier-plugin-packagejson": "^2.5.1",

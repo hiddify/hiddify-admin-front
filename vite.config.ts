@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/hiddify-admin-front/',
   plugins: [react()],
   server: {
     port: 3000, // You can specify the port you want the dev server to run on
