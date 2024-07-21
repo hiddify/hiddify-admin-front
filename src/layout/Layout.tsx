@@ -78,7 +78,7 @@ const Layout: React.FC = () => {
           top: { xs: '35vw', md: '8vw' },
         }}
       >
-        {activeStep ? steps[activeStep - 1].title : 'Welcome To Hiddify'}
+        {activeStep ? steps[activeStep - 1].title : 'به هیدیفای خوش آمدید'}
       </Typography>
       <Outlet />
       <Box

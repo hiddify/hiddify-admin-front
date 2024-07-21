@@ -50,6 +50,9 @@ const theme = extendTheme({
       },
     },
   },
+  typography: {
+    fontFamily: 'Lato',
+  },
   components: {
     MuiStepper: {
       styleOverrides: {
