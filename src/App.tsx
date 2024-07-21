@@ -34,7 +34,7 @@ const App: React.FC = () => {
     <InstallTypeProvider>
       <ActiveStepProvider>
         <CssVarsProvider theme={theme}>
-          <Router>
+          <Router basename='/hiddify-admin-front'>
             <Suspense fallback={<Loading />}>
               <Routes>
                 <Route path='/' element={<Layout />}>
